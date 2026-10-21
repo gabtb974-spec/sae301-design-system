@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design System · Gong cha Click &amp; Collect</title>
+<meta name="description" content="Design system du projet Click &amp; Collect Gong cha (SAé 3.01, BUT MMI) : couleurs, typographie, composants.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vidaloka&family=Public+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner container">
+    <img class="site-header__logo" src="https://a.storyblok.com/f/287879189776283/650x140/aa2c064c43/gong-cha-bubble-tea-logo-footer.png" alt="Gong cha Bubble Tea">
+    <nav aria-label="Sections">
+      <ul class="site-header__nav" role="list">
+        <li class="site-header__item"><a class="site-header__link" href="#couleurs">Couleurs</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#typographie">Typographie</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#boutons">Boutons</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#formulaires">Formulaires</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#navigation">Navigation</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#cartes">Cartes</a></li>
+        <li class="site-header__item"><a class="site-header__link" href="#regles">Règles</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="page container">
+
+  <div class="intro">
+    <h1 class="intro__title">Design System</h1>
+    <p class="intro__text">Tokens relevés sur gong-cha.com/france (couleurs, polices, arrondis) et déclinés pour le site Click &amp; Collect. Projet pédagogique SAé 3.01, BUT MMI Limoges.</p>
+  </div>
+
+  <section class="section" id="couleurs" aria-labelledby="titre-couleurs">
+    <h2 class="section__title" id="titre-couleurs">Couleurs</h2>
+    <h3 class="section__subtitle">Primaire</h3>
+    <ul class="swatch-list" role="list">
+      <li class="swatch"><div class="swatch__color swatch__color--primary"></div><div class="swatch__body"><strong class="swatch__name">Rouge Gong cha</strong><span class="swatch__value">#C10230 · --color-primary</span><span class="swatch__use">CTA, en-tête, pied, liens</span></div></li>
+      <li class="swatch"><div class="swatch__color swatch__color--primary-dark"></div><div class="swatch__body"><strong class="swatch__name">Rouge foncé</strong><span class="swatch__value">#B10023 · --color-primary-dark</span><span class="swatch__use">Survol du primaire</span></div></li>
+      <li class="swatch"><div class="swatch__color swatch__color--primary-light"></div><div class="swatch__body"><strong class="swatch__name">Rose pâle</strong><span class="swatch__value">#F3DCDF · --color-primary-light</span><span class="swatch__use">Fonds teintés, visuel produit</span></div></li>
+    </ul>
+    <h3 class="section__subtitle">Secondaire</h3>
+    <ul class="swatch-list" role="list">
+      <li class="swatch"><div class="swatch__color swatch__color--secondary"></div><div class="swatch__body"><strong class="swatch__name">Brun encre</strong><span class="swatch__value">#382F2D · --color-secondary</span><span class="swatch__use">Texte, boutons secondaires, badge star</span></div></li>
+      <li class="swatch"><div class="swatch__color swatch__color--secondary-light"></div><div class="swatch__body"><strong class="swatch__name">Brun doux</strong><span class="swatch__value">#6B5659 · --color-secondary-light</span><span class="swatch__use">Texte atténué, notes</span></div></li>
+    </ul>
+    <h3 class="section__subtitle">Accents, fond et états</h3>
+    <ul class="swatch-list" role="list">
+      <li class="swatch"><div class="swatch__color swatch__color--accent"></div><div class="swatch__body"><strong class="swatch__name">Or clair</strong><span class="swatch__value">#F1D09F · --color-accent</span><span class="swatch__use">États actifs sur rouge, focus</span></div></li>
+      <li class="swatch"><div class="swatch__color swatch__color--accent-alt"></div><div class="swatch__body"><strong class="swatch__name">Marine</strong><span class="swatch__value">#293C5B · --color-accent-alt</span><span class="swatch__use">Accent éditorial</span></div></li>
+      <li class="swatch"><div class="swatch__color swatch__color--background"></div><div class="swatch__body"><strong class="swatch__name">Crème</strong><span class="swatch__value">#FCF6ED · --color-background</span><span class="swatch__use">Fond de page</span></div></li>
+      <li class="swatch"><div class="swatch__color swatch__color--success"></div><div class="swatch__body"><strong class="swatch__name">Vert succès</strong><span class="swatch__value">#1B6B3A · --color-success</span><span class="swatch__use">Réduction, statut prête</span></div></li>
+    </ul>
+    <p class="section__note">Source : couleurs calculées sur le site officiel (rouge, brun, crème, rouge foncé, or, marine). Les teintes pastel de fond produit et les états (succès, alerte, désactivé) sont des ajouts.</p>
+  </section>
+
+  <section class="section" id="typographie" aria-labelledby="titre-typo">
+    <h2 class="section__title" id="titre-typo">Typographie</h2>
+    <div class="panel panel--stack specimen">
+      <div class="specimen__item"><small class="specimen__label">H1 · Vidaloka (--font-primary) 400 · 56 / 62</small><p class="specimen__sample specimen__sample--h1">L’art du Bubble tea</p></div>
+      <div class="specimen__item"><small class="specimen__label">H2 · Vidaloka 400 · 32 / 37</small><p class="specimen__sample specimen__sample--h2">Les nouveautés</p></div>
+      <div class="specimen__item"><small class="specimen__label">H3 · Vidaloka 400 · 21 / 25</small><p class="specimen__sample specimen__sample--h3">Thé au lait noir avec perles</p></div>
+      <div class="specimen__item"><small class="specimen__label">Corps · Public Sans (--font-secondary) 400 · 16 / 26</small><p class="specimen__sample specimen__sample--body">Thé noir, lait et perles à mâcher. Personnalisez la taille, la douceur et les garnitures.</p></div>
+      <div class="specimen__item"><small class="specimen__label">Label · Public Sans 700 · 14</small><p class="specimen__sample specimen__sample--label">Niveau de sucre</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="boutons" aria-labelledby="titre-boutons">
+    <h2 class="section__title" id="titre-boutons">Boutons, puces, badges</h2>
+    <div class="panel panel--row">
+      <a class="btn btn--primary" href="#boutons">Primaire</a>
+      <a class="btn btn--secondary" href="#boutons">Secondaire</a>
+      <button class="btn btn--disabled" type="button" disabled>Désactivé</button>
+      <button class="chip" type="button" aria-pressed="false">Puce</button>
+      <button class="chip chip--active" type="button" aria-pressed="true">Puce active</button>
+      <span class="badge badge--star">★ Produit star</span>
+      <span class="badge badge--new">Nouveau</span>
+      <span class="badge badge--promo">−10 %</span>
+      <span class="badge badge--low">Stock faible</span>
+      <span class="badge badge--out">Épuisé</span>
+    </div>
+  </section>
+
+  <section class="section" id="formulaires" aria-labelledby="titre-form">
+    <h2 class="section__title" id="titre-form">Formulaires</h2>
+    <form class="panel panel--fields" onsubmit="return false">
+      <div class="field">
+        <label class="field__label" for="champ">Champ</label>
+        <input class="field__control" id="champ" placeholder="Saisie">
+      </div>
+      <div class="field">
+        <label class="field__label" for="liste">Liste</label>
+        <select class="field__control" id="liste"><option>Moyenne</option><option>Grande</option></select>
+      </div>
+      <div class="field">
+        <label class="field__label" for="email">Champ en erreur</label>
+        <input class="field__control field__control--error" id="email" value="adresse@" aria-invalid="true" aria-describedby="email-erreur">
+        <span class="field__message field__message--error" id="email-erreur">Adresse e-mail invalide.</span>
+      </div>
+    </form>
+  </section>
+
+  <section class="section" id="navigation" aria-labelledby="titre-nav">
+    <h2 class="section__title" id="titre-nav">Navigation</h2>
+    <div class="panel panel--stack">
+      <div class="panel__item">
+        <small class="section__note">En-tête</small>
+        <div class="demo-header">
+          <span class="demo-header__logo">gong cha</span>
+          <nav aria-label="Exemple de menu">
+            <ul class="demo-header__nav" role="list">
+              <li class="demo-header__item"><a class="demo-header__link demo-header__link--current" href="#navigation" aria-current="page">Boutique</a></li>
+              <li class="demo-header__item"><a class="demo-header__link" href="#navigation">L’équipe</a></li>
+              <li class="demo-header__item"><a class="demo-header__link" href="#navigation">Mon compte</a></li>
+              <li class="demo-header__item"><a class="demo-header__link demo-header__link--cart" href="#navigation">Panier <span class="demo-header__count">2</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="panel__item">
+        <small class="section__note">Fil d’Ariane</small>
+        <nav class="breadcrumb" aria-label="Fil d’Ariane"><a class="breadcrumb__link" href="#navigation">Accueil</a><span class="breadcrumb__separator" aria-hidden="true">/</span><a class="breadcrumb__link" href="#navigation">Boutique</a><span class="breadcrumb__separator" aria-hidden="true">/</span><span class="breadcrumb__current" aria-current="page">Thé au lait noir avec perles</span></nav>
+      </div>
+      <div class="panel__item">
+        <small class="section__note">Pagination</small>
+        <nav aria-label="Pagination">
+          <ul class="pagination" role="list">
+            <li class="pagination__item"><a class="pagination__link" href="#navigation" aria-label="Page précédente">←</a></li>
+            <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#navigation" aria-current="page">1</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#navigation">2</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#navigation">3</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#navigation" aria-label="Page suivante">→</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cartes" aria-labelledby="titre-cartes">
+    <h2 class="section__title" id="titre-cartes">Carte produit</h2>
+    <div class="card-list">
+      <article class="card">
+        <div class="card__visual card__visual--rose">
+          <span class="card__badge badge badge--star">★ Produit star</span>
+          <img class="card__image" src="https://a.storyblok.com/f/287879189776283/420x784/12a247b040/08-pearl-milk-tea-black.png" alt="">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Thé au lait noir avec perles</h3>
+          <p class="card__text">Thé noir, lait et perles à mâcher.</p>
+          <div class="card__footer"><span class="card__price">5,50 €</span><a class="btn btn--primary btn--small" href="#cartes">Choisir</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__visual card__visual--peach">
+          <span class="card__badge badge badge--promo">−10 %</span>
+          <img class="card__image" src="https://a.storyblok.com/f/287879189776283/420x784/22a167c9b2/17-qq-passionfruit-green-tea.png" alt="">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Thé vert fruit de la passion</h3>
+          <p class="card__text">Thé vert, fruit de la passion, perles et gelée de noix de coco.</p>
+          <div class="card__footer"><span class="card__price">5,80 € <s class="card__old-price">6,40 €</s></span><a class="btn btn--primary btn--small" href="#cartes">Choisir</a></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__visual card__visual--mango">
+          <span class="card__badge badge badge--out">Épuisé</span>
+          <img class="card__image" src="https://a.storyblok.com/f/287879189776283/420x784/e93cddf689/191-mango-milk-tea.png" alt="">
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Thé au lait à la mangue</h3>
+          <p class="card__text">Thé vert, mangue et texture lactée.</p>
+          <div class="card__footer"><span class="card__price">5,90 €</span><span class="btn btn--disabled btn--small">Indisponible</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="regles" aria-labelledby="titre-regles">
+    <h2 class="section__title" id="titre-regles">Espacements, arrondis, grille</h2>
+
+    <h3 class="section__subtitle">Échelle d’espacement</h3>
+    <div class="panel">
+      <ul class="space-list" role="list">
+        <li class="space"><code class="space__token">--space-1</code><span class="space__value">4 px</span><span class="space__bar space__bar--1"></span><span class="space__use">Écart icône / texte</span></li>
+        <li class="space"><code class="space__token">--space-2</code><span class="space__value">8 px</span><span class="space__bar space__bar--2"></span><span class="space__use">Écart entre puces, marge du fil d’Ariane</span></li>
+        <li class="space"><code class="space__token">--space-3</code><span class="space__value">12 px</span><span class="space__bar space__bar--3"></span><span class="space__use">Écart pied de carte, marge sous le logo</span></li>
+        <li class="space"><code class="space__token">--space-4</code><span class="space__value">16 px</span><span class="space__bar space__bar--4"></span><span class="space__use">Écart nuancier, menu ; marge mobile</span></li>
+        <li class="space"><code class="space__token">--space-5</code><span class="space__value">24 px</span><span class="space__bar space__bar--5"></span><span class="space__use">Padding carte, gouttière, écart dans une section</span></li>
+        <li class="space"><code class="space__token">--space-6</code><span class="space__value">32 px</span><span class="space__bar space__bar--6"></span><span class="space__use">Padding des panneaux, écart entre cartes</span></li>
+        <li class="space"><code class="space__token">--space-7</code><span class="space__value">48 px</span><span class="space__bar space__bar--7"></span><span class="space__use">Marge latérale desktop</span></li>
+        <li class="space"><code class="space__token">--space-8</code><span class="space__value">64 px</span><span class="space__bar space__bar--8"></span><span class="space__use">Écart entre sections</span></li>
+        <li class="space"><code class="space__token">--space-9</code><span class="space__value">80 px</span><span class="space__bar space__bar--9"></span><span class="space__use">Marge bas de page</span></li>
+      </ul>
+    </div>
+
+    <h3 class="section__subtitle">Arrondis</h3>
+    <div class="panel">
+      <ul class="radius-list" role="list">
+        <li class="radius"><span class="radius__sample radius__sample--field"></span><code>--radius-field</code><span class="radius__value">12 px</span><span class="radius__use">Champs de formulaire, grille</span></li>
+        <li class="radius"><span class="radius__sample radius__sample--card"></span><code>--radius-card</code><span class="radius__value">20 px</span><span class="radius__use">Cartes produit, en-tête démo</span></li>
+        <li class="radius"><span class="radius__sample radius__sample--block"></span><code>--radius-block</code><span class="radius__value">24 px</span><span class="radius__use">Panneaux, blocs</span></li>
+        <li class="radius"><span class="radius__sample radius__sample--pill"></span><code>--radius-pill</code><span class="radius__value">999 px</span><span class="radius__use">Boutons, puces, badges, pagination</span></li>
+      </ul>
+      <p class="section__note">Exception : le pied de page a 30 px d’arrondi en haut seulement.</p>
+    </div>
+
+    <h3 class="section__subtitle">Grille</h3>
+    <div class="panel panel--stack">
+      <div class="panel__item">
+        <small class="section__note">12 colonnes · gouttière 24 px (<code>--gutter</code>) · conteneur 1344 px max (<code>--container-max</code>)</small>
+        <div class="grid-demo" aria-hidden="true">
+          <span class="grid-demo__col">1</span>
+          <span class="grid-demo__col">2</span>
+          <span class="grid-demo__col">3</span>
+          <span class="grid-demo__col">4</span>
+          <span class="grid-demo__col">5</span>
+          <span class="grid-demo__col">6</span>
+          <span class="grid-demo__col">7</span>
+          <span class="grid-demo__col">8</span>
+          <span class="grid-demo__col">9</span>
+          <span class="grid-demo__col">10</span>
+          <span class="grid-demo__col">11</span>
+          <span class="grid-demo__col">12</span>
+        </div>
+      </div>
+      <div class="panel__item">
+        <small class="section__note">Exemple : 3 cartes produit sur 4 colonnes chacune</small>
+        <div class="grid-demo" aria-hidden="true">
+          <span class="grid-demo__item">4 col.</span>
+          <span class="grid-demo__item">4 col.</span>
+          <span class="grid-demo__item">4 col.</span>
+        </div>
+      </div>
+      <div class="panel__item">
+        <small class="section__note">Marges latérales du conteneur</small>
+        <div class="margin-demo" aria-hidden="true">
+          <span class="margin-demo__gap margin-demo__gap--desktop">48 px</span>
+          <span class="margin-demo__content">Contenu (desktop)</span>
+          <span class="margin-demo__gap margin-demo__gap--desktop">48 px</span>
+        </div>
+        <div class="margin-demo margin-demo--mobile" aria-hidden="true">
+          <span class="margin-demo__gap margin-demo__gap--mobile">16</span>
+          <span class="margin-demo__content">Contenu (mobile)</span>
+          <span class="margin-demo__gap margin-demo__gap--mobile">16</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="section__subtitle">Cibles tactiles</h3>
+    <div class="panel panel--row">
+      <span class="touch-demo touch-demo--ok">44 × 44 px<br>minimum</span>
+      <span class="touch-demo touch-demo--ko">32 px<br>trop petit</span>
+      <p class="section__note">Liens du menu, pagination et boutons ont tous une hauteur d’au moins 44 px (<code>--touch-target</code>).</p>
+    </div>
+
+    <h3 class="section__subtitle">Contrastes (WCAG 2.1)</h3>
+    <div class="panel">
+      <ul class="contrast-list" role="list">
+        <li class="contrast"><span class="contrast__sample contrast__sample--primary">Aa</span><span class="contrast__label">Blanc sur rouge primaire</span><span class="contrast__ratio">6,33:1</span><span class="contrast__level contrast__level--pass">AA</span></li>
+        <li class="contrast"><span class="contrast__sample contrast__sample--secondary">Aa</span><span class="contrast__label">Brun encre sur crème</span><span class="contrast__ratio">12,12:1</span><span class="contrast__level contrast__level--pass">AAA</span></li>
+        <li class="contrast"><span class="contrast__sample contrast__sample--soft">Aa</span><span class="contrast__label">Brun doux sur crème</span><span class="contrast__ratio">6,30:1</span><span class="contrast__level contrast__level--pass">AA</span></li>
+        <li class="contrast"><span class="contrast__sample contrast__sample--star">Aa</span><span class="contrast__label">Badge star : crème sur brun</span><span class="contrast__ratio">11,51:1</span><span class="contrast__level contrast__level--pass">AAA</span></li>
+        <li class="contrast"><span class="contrast__sample contrast__sample--footer">Aa</span><span class="contrast__label">Texte du pied sur rouge</span><span class="contrast__ratio">5,34:1</span><span class="contrast__level contrast__level--pass">AA</span></li>
+        <li class="contrast"><span class="contrast__sample contrast__sample--accent">Aa</span><span class="contrast__label">Or sur rouge (lien actif)</span><span class="contrast__ratio">4,30:1</span><span class="contrast__level contrast__level--warn">AA grand texte seulement</span></li>
+      </ul>
+      <p class="section__note">Ratios calculés avec la formule de luminance relative WCAG. AA = 4,5:1 (texte courant), 3:1 (grand texte ≥ 24 px ou 18,7 px gras) ; AAA = 7:1.</p>
+    </div>
+
+    <h3 class="section__subtitle">Conventions</h3>
+    <ul class="rules">
+      <li class="rules__item">Convention de nommage : BEM (<code>bloc__élément--modificateur</code>) : une classe par sélecteur, pas d’imbrication, le modificateur se pose sur l’élément qu’il modifie</li>
+      <li class="rules__item">Couleurs : primaire <code>--color-primary</code> (rouge) et secondaire <code>--color-secondary</code> (brun), avec déclinaisons <code>-dark</code> / <code>-light</code> et textes associés <code>--color-on-*</code></li>
+      <li class="rules__item">Polices : primaire <code>--font-primary</code> (Vidaloka, titres) et secondaire <code>--font-secondary</code> (Public Sans, texte)</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner container">
+    <img class="site-footer__logo" src="https://a.storyblok.com/f/287879189776283/650x140/aa2c064c43/gong-cha-bubble-tea-logo-footer.png" alt="Gong cha Bubble Tea">
+    <p class="site-footer__text">© 2026 Gong cha Click &amp; Collect · Projet pédagogique SAé 3.01, BUT MMI Limoges. Site non officiel ; logo et visuels © Gong cha, utilisés à titre pédagogique.</p>
+  </div>
+</footer>
+
+</body>
+</html>
