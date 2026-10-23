@@ -9,8 +9,9 @@
      reset → tokens → base → layout → components → documentation
    L'ordre des couches, déclaré une seule fois ci-dessous, décide des priorités :
    pas de course à la spécificité ni de !important.
-   Transfert vers WordPress : les couches tokens et components sont reprises telles
-   quelles dans le thème enfant (assets/css/tokens.css et theme.css) ; la couche
+   Transfert vers WordPress : les couches tokens et components se copient en bloc dans
+   le thème enfant (assets/css/tokens.css et theme.css) ; dans le thème, les variables
+   portent des noms français (table « Correspondance » de index.html). La couche
    documentation ne sert qu'à cette page (nuancier, grilles, tableaux de specs).
    ========================================================================== */
 
